@@ -6,10 +6,24 @@ app.use(express.json());
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "secagent_verify";
 const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN || "";
 const PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID || "";
-// Public https image URL (logo, flyer sample, etc). Leave empty to skip images.
 const SAMPLE_IMAGE_URL = process.env.SAMPLE_IMAGE_URL || "";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const BUSINESS_CONTEXT = `
+You are the WhatsApp assistant for Eighties Multimedia (also called 8 Multimedia).
+Based in Tema, Greater Accra, Ghana. Website: eightmultimedia.com
+Services: graphic design (logos, branding, posters, flyers, packaging, corporate identity),
+video editing and production, website development, and audio (jingles, voice, sound).
+Rules:
+- Keep replies short (1-3 short sentences). Plain English.
+- Never invent exact prices. For pricing, ask for the job, deadline, and brief, then say a team member will quote.
+- If they want a human, say someone will continue here shortly.
+- Do not claim services you do not offer.
+- Be friendly and professional.
+`.trim();
 
 async function waSend(body) {
   const res = await fetch(
@@ -23,9 +37,7 @@ async function waSend(body) {
       body: JSON.stringify({ messaging_product: "whatsapp", ...body }),
     }
   );
-  if (!res.ok) {
-    console.error("WA send failed", res.status, await res.text());
-  }
+  if (!res.ok) console.error("WA send failed", res.status, await res.text());
 }
 
 async function showTyping(messageId) {
@@ -37,27 +49,48 @@ async function showTyping(messageId) {
 }
 
 async function sendText(to, text) {
-  await waSend({
-    to,
-    type: "text",
-    text: { body: text },
-  });
+  await waSend({ to, type: "text", text: { body: text } });
 }
 
 async function sendImage(to, imageUrl, caption) {
   await waSend({
     to,
     type: "image",
-    image: {
-      link: imageUrl,
-      ...(caption ? { caption } : {}),
-    },
+    image: { link: imageUrl, ...(caption ? { caption } : {}) },
   });
 }
 
-function buildReply(text) {
-  let reply =
-    "Thanks for messaging Eighties Multimedia. We help with graphic design, video, websites, and audio. Tell me which one you need.";
+async function askGemini(userText) {
+  if (!GEMINI_API_KEY) return null;
+  const url =
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [
+        {
+          role: "user",
+          parts: [
+            {
+              text: `${BUSINESS_CONTEXT}\n\nCustomer message:\n${userText}\n\nReply as the assistant only.`,
+            },
+          ],
+        },
+      ],
+      generationConfig: { temperature: 0.4, maxOutputTokens: 180 },
+    }),
+  });
+  if (!res.ok) {
+    console.error("Gemini failed", res.status, await res.text());
+    return null;
+  }
+  const data = await res.json();
+  return data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || null;
+}
+
+function keywordReply(text) {
+  let reply = null;
   let sendSampleImage = false;
 
   if (
@@ -79,57 +112,6 @@ function buildReply(text) {
     reply =
       "Happy to help with a quote. Tell me the job (design, video, website, or audio), your deadline, and a short brief. A team member will follow up with pricing.";
   } else if (
-    text.includes("logo") ||
-    text.includes("brand") ||
-    text.includes("poster") ||
-    text.includes("flyer") ||
-    text.includes("graphic") ||
-    text.includes("design") ||
-    text.includes("packaging") ||
-    text.includes("business card")
-  ) {
-    reply =
-      "We handle graphic design and branding, from logos and flyers to packaging and corporate identity. What do you need designed, and when do you need it?";
-  } else if (
-    text.includes("video") ||
-    text.includes("film") ||
-    text.includes("edit") ||
-    text.includes("shoot") ||
-    text.includes("production")
-  ) {
-    reply =
-      "We offer video editing and production for business and creative projects. Is this an edit of existing footage, a full shoot, or both?";
-  } else if (
-    text.includes("website") ||
-    text.includes("web") ||
-    text.includes("site") ||
-    text.includes("app")
-  ) {
-    reply =
-      "We build business websites. Is this a new site or a redesign of what you already have?";
-  } else if (
-    text.includes("audio") ||
-    text.includes("sound") ||
-    text.includes("jingle") ||
-    text.includes("voice") ||
-    text.includes("music") ||
-    text.includes("podcast")
-  ) {
-    reply =
-      "We do audio work for brands and productions. Tell me if you need a jingle, voice work, sound design, or something else.";
-  } else if (
-    text.includes("portfolio") ||
-    text.includes("work") ||
-    text.includes("sample") ||
-    text.includes("example") ||
-    text.includes("photo") ||
-    text.includes("image") ||
-    text.includes("picture")
-  ) {
-    reply =
-      "Here is a sample of our work. You can also browse more at eightmultimedia.com. Which service are you interested in?";
-    sendSampleImage = true;
-  } else if (
     text.includes("human") ||
     text.includes("person") ||
     text.includes("call") ||
@@ -140,14 +122,14 @@ function buildReply(text) {
     reply =
       "No problem. Someone from Eighties Multimedia will continue with you here shortly.";
   } else if (
-    text.includes("location") ||
-    text.includes("where") ||
-    text.includes("tema") ||
-    text.includes("accra") ||
-    text.includes("address")
+    text.includes("portfolio") ||
+    text.includes("sample") ||
+    text.includes("example") ||
+    text.includes("picture")
   ) {
     reply =
-      "We are based in Tema, Greater Accra, and work with clients across Ghana. Share your project and we will guide you from there.";
+      "Here is a sample of our work. You can also browse more at eightmultimedia.com. Which service are you interested in?";
+    sendSampleImage = true;
   }
 
   return { reply, sendSampleImage };
@@ -171,13 +153,25 @@ app.post("/webhook", async (req, res) => {
     if (!msg || !WHATSAPP_TOKEN || !PHONE_NUMBER_ID) return;
 
     const to = msg.from;
-    const text = (msg.text?.body || "").trim().toLowerCase();
-    const { reply, sendSampleImage } = buildReply(text);
+    const raw = (msg.text?.body || "").trim();
+    const text = raw.toLowerCase();
+    if (!raw) return;
 
     await showTyping(msg.id);
-    await sleep(1200);
+    await sleep(900);
 
-    if (sendSampleImage && SAMPLE_IMAGE_URL) {
+    const keyed = keywordReply(text);
+    let reply = keyed.reply;
+
+    if (!reply) {
+      reply = await askGemini(raw);
+    }
+    if (!reply) {
+      reply =
+        "Thanks for messaging Eighties Multimedia. Tell me if you need design, video, a website, or audio, and I will help.";
+    }
+
+    if (keyed.sendSampleImage && SAMPLE_IMAGE_URL) {
       await sendImage(to, SAMPLE_IMAGE_URL, reply);
     } else {
       await sendText(to, reply);
