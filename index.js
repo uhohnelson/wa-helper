@@ -19,33 +19,34 @@ try {
 } catch (err) {
   console.warn("⚠ knowledge.txt not found, using fallback");
   KNOWLEDGE_BASE = `
-Eighties Multimedia (8 Multimedia) is based in Tema, Ghana.
-Website: eightmultimedia.com
-Services: graphic design, video editing and production, website development, and audio services.
-Pricing is project-specific based on scope and deadline.
+Seven Kids Code Foundation is a kids coding and robotics program in Ghana.
+Website: sevenkidscodefoundation.org
+Programs: Python, Scratch, Roblox, Arduino, Blender, Robotics, AI, Web Development, Game Development.
+Centers: Tema (Community 11) and Mataheko.
+Contact: info@sevenkidscodefoundation.org, Tema: 030 395 5148, Mataheko: 030 332 3844.
   `.trim();
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const SYSTEM_INSTRUCTION = `
-You are the WhatsApp assistant for Eighties Multimedia (8 Multimedia).
+You are the WhatsApp assistant for Seven Kids Code Foundation — a kids coding and robotics program.
 
 KNOWLEDGE BASE:
 ${KNOWLEDGE_BASE}
 
 STRICT RULES:
 1. Answer ONLY using information from the KNOWLEDGE BASE above.
-2. If the customer asks about something unrelated to Eighties Multimedia or its services (trivia, news, homework, general knowledge, or any topic not in the knowledge base), politely redirect them by saying you only help with Eighties Multimedia services.
-3. If the customer asks about the business but the information is not in the knowledge base, output exactly "NEED_HUMAN" as your complete response.
-4. NEVER invent prices, clients, projects, or services not mentioned in the knowledge base.
-5. Keep replies short (1-3 sentences maximum). Use plain, friendly English.
+2. If the customer asks about something unrelated to Seven Kids Code Foundation or kids coding/robotics (trivia, news, homework, general knowledge, or any topic not in the knowledge base), politely redirect them by saying you only help with Seven Kids Code.
+3. If the customer asks about the program but the information is not in the knowledge base, output exactly "NEED_HUMAN" as your complete response.
+4. NEVER invent fees, ages, enrollment details, class schedules, or program specifics not mentioned in the knowledge base.
+5. Keep replies short (1-3 sentences maximum). Use plain, warm, friendly language for parents and kids.
 6. Never answer questions about world events, history, science, math, or any general knowledge topics.
 `.trim();
 
-const OFF_TOPIC_REDIRECT = "Thanks for reaching out! I help with Eighties Multimedia services (design, video, websites, audio). How can I assist you with our services today?";
+const OFF_TOPIC_REDIRECT = "I'm only here for Seven Kids Code — kids coding. What do you need?";
 
-const NEED_HUMAN_MESSAGE = "Let me connect you with someone from our team who can help with that. They'll continue with you here shortly.";
+const NEED_HUMAN_MESSAGE = "Let me connect you with one of our teachers. They'll continue with you here shortly.";
 
 async function waSend(body) {
   const res = await fetch(
@@ -129,44 +130,47 @@ function keywordReply(text) {
   let sendSampleImage = false;
 
   const hasWord = (word) => new RegExp(`\\b${word}\\b`, "i").test(text);
+  
+  // Greeting: only trigger on short messages or clear greeting patterns
+  const isGreeting = (
+    (text.length < 20 && (hasWord("hi") || hasWord("hello") || hasWord("hey"))) ||
+    text.match(/^(hi|hello|hey|good morning|good evening|good afternoon)/i) ||
+    text === "hi" || text === "hello" || text === "hey"
+  );
 
-  if (
-    hasWord("hi") ||
-    hasWord("hello") ||
-    hasWord("hey") ||
-    text.includes("good morning") ||
-    text.includes("good evening")
-  ) {
+  if (isGreeting) {
     reply =
-      "Hi, welcome to Eighties Multimedia. We do graphic design, video editing and production, website development, and audio. What can we help you with today?";
+      "Hi! Welcome to Seven Kids Code Foundation. We teach kids coding, robotics, and tech skills. How can I help you today?";
   } else if (
     hasWord("price") ||
     hasWord("cost") ||
+    hasWord("fee") ||
     text.includes("how much") ||
     hasWord("quote") ||
     hasWord("rate")
   ) {
     reply =
-      "Happy to help with a quote. Tell me the job (design, video, website, or audio), your deadline, and a short brief. A team member will follow up with pricing.";
+      "For class fees, schedules, and enrollment info, email info@sevenkidscodefoundation.org or call us (Tema: 030 395 5148, Mataheko: 030 332 3844). One of our teachers will help you.";
   } else if (
     hasWord("human") ||
     hasWord("person") ||
     hasWord("call") ||
     hasWord("agent") ||
+    hasWord("teacher") ||
     hasWord("talk") ||
     hasWord("staff")
   ) {
     reply =
-      "No problem. Someone from Eighties Multimedia will continue with you here shortly.";
+      "No problem. One of our teachers will continue with you here shortly.";
   } else if (
-    hasWord("portfolio") ||
-    hasWord("sample") ||
-    hasWord("example") ||
-    hasWord("picture")
+    hasWord("program") ||
+    hasWord("class") ||
+    hasWord("course") ||
+    hasWord("teach") ||
+    hasWord("learn")
   ) {
     reply =
-      "Here is a sample of our work. You can also browse more at eightmultimedia.com. Which service are you interested in?";
-    sendSampleImage = true;
+      "We teach Python, Scratch, Roblox, Arduino, Blender, Robotics, AI, and more! Check sevenkidscodefoundation.org or ask me what you'd like to know.";
   }
 
   return { reply, sendSampleImage };
@@ -221,7 +225,7 @@ app.post("/webhook", async (req, res) => {
 
     if (!reply) {
       reply =
-        "Thanks for messaging Eighties Multimedia. Tell me if you need design, video, a website, or audio, and I will help.";
+        "Hi! I'm here to help with Seven Kids Code. Ask me about our coding programs, robotics classes, or how to enroll!";
     }
 
     if (keyed.sendSampleImage && SAMPLE_IMAGE_URL) {
