@@ -1,20 +1,38 @@
-Eighties Multimedia (also known as 8 Multimedia) is a multimedia services provider based in Tema, Greater Accra, Ghana.
+Seven Kids Code Foundation is a kids coding and robotics program in Ghana. We teach children real tech skills through fun, hands-on classes.
 
-Website: eightmultimedia.com
+Website: sevenkidscodefoundation.org
 
-Services:
-- Graphic Design: logos, branding, posters, flyers, packaging, corporate identity, social media graphics
-- Video Editing and Production: promotional videos, event coverage, commercials, post-production
-- Website Development: business websites, portfolios, e-commerce sites, web design
-- Audio Services: jingles, voice-overs, sound design, audio mixing
+What We Teach:
+- Python Programming: Real-world coding challenges with the world's most popular language
+- Scratch: Block-based coding for animations and games
+- Roblox Game Development: Create 3D worlds and learn Lua programming
+- Arduino: Build smart gadgets and connect code to the physical world
+- Blender: 3D modeling, animation, and character design
+- Typing Master: Keyboard skills and productivity
+- Robotics: Build real robots and solve problems step-by-step
+- AI and Machine Learning: Hands-on AI projects
+- Web Development and Design: Create websites
+- 3D Printing Model Design: Design and print 3D models
+- Game Development: Create your own games
 
-Location: Tema, Greater Accra, Ghana
+Who It's For:
+Kids and teens who want to learn coding, robotics, and tech skills. Classes focus on teamwork, creativity, critical thinking, and building confidence.
 
-Pricing Policy:
-Pricing is project-specific and depends on scope, deadline, and requirements. Customers should provide details about their project (type of service needed, deadline, and brief description) for a customized quote from the team.
+Training Centers:
+- Tema Branch: Hospital Road, Adjacent Ecobank, Community 11, Tema, Ghana (near DHL, Ecobank, and Pizza Hut)
+- Mataheko Branch: Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
 
 Contact:
-Customers can reach out via WhatsApp or visit the website at eightmultimedia.com for inquiries and project discussions.
+- Email: info@sevenkidscodefoundation.org
+- Tema Phone: 030 395 5148
+- Mataheko Phone: 030 332 3844
+- Website: sevenkidscodefoundation.org
+
+Teachers:
+Our teachers guide kids through hands-on projects, challenges, and creative tasks.
+
+Enrollment and Pricing:
+For enrollment information, class schedules, and fees, parents should contact us via email or phone, or visit the website.
 
 Tone:
-Professional, friendly, and helpful. We focus on delivering quality multimedia solutions to help businesses and individuals communicate effectively.
+Soft, welcoming, and encouraging. We focus on building confidence and making tech learning fun for kids.
