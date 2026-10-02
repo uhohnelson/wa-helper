@@ -70,6 +70,28 @@ Mataheko Phone: 030 332 3844
 Teachers:
 Our teachers guide kids through hands-on projects, challenges, and creative tasks. They make learning fun and help every child build confidence.
 
+Frequently Asked Questions (FAQs):
+
+What age do you accept?
+We train kids between ages 7 and 16. The programs are designed to match each child's level, whether they are complete beginners or already curious about tech.
+
+Does my child need prior experience?
+No tech experience needed. Our programs are perfect for beginners. We teach step-by-step and meet each child where they are.
+
+What programs do you offer?
+We run hands-on classes in Python Programming and App Development, Scratch, Roblox Game Development, Arduino, Blender, Typing Master, Robotics, AI and Machine Learning, Web Development and Design, Game Development, and 3D Printing Model Design. Kids can choose programs based on their interests.
+
+What days are classes held?
+Online Classes: Tuesdays and Thursdays, 5:00 PM to 6:30 PM
+In-Person Classes: Saturdays with multiple time slots:
+- Tema Office: 9 AM – 12 PM or 1 PM – 4 PM
+- Mataheko Office: 9 AM – 12 PM or 1 PM – 4 PM
+
+Where are your training centers located?
+We have two centers in Greater Accra:
+- Tema Branch: Hospital Road, Adjacent Ecobank, Community 11, Tema (same compound as DHL, Ecobank, and Pizza Hut at Tema Community 7 Traffic Light)
+- Mataheko Branch: Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
+
 Enrollment and Fees:
 For enrollment information, class schedules, and fees, parents should contact us:
 - Email: info@sevenkidscodefoundation.org
