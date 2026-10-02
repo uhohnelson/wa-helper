@@ -1,38 +1,85 @@
-Seven Kids Code Foundation is a kids coding and robotics program in Ghana. We teach children real tech skills through fun, hands-on classes.
+Seven Kids Code Foundation is a kids coding and robotics program in Ghana. We don't just teach tech — we build confidence through fun, hands-on classes in coding, robotics, and game design.
 
-Website: sevenkidscodefoundation.org
+What We Do:
+We teach children real tech skills through hands-on projects. Kids build real robots, create games, solve problems step-by-step, and work on creative challenges. Every class is exciting and engaging.
 
 What We Teach:
-- Python Programming: Real-world coding challenges with the world's most popular language
-- Scratch: Block-based coding for animations and games
-- Roblox Game Development: Create 3D worlds and learn Lua programming
-- Arduino: Build smart gadgets and connect code to the physical world
-- Blender: 3D modeling, animation, and character design
-- Typing Master: Keyboard skills and productivity
-- Robotics: Build real robots and solve problems step-by-step
-- AI and Machine Learning: Hands-on AI projects
-- Web Development and Design: Create websites
-- 3D Printing Model Design: Design and print 3D models
-- Game Development: Create your own games
+
+Python Programming:
+Master the world's most popular programming language through fun, real-world coding challenges. Kids learn app development and practical coding skills.
+
+Scratch:
+Blast off into coding with colorful blocks. Kids create their very own animations and learn programming logic visually.
+
+Roblox Game Development:
+Design immersive 3D worlds and learn Lua programming to bring games to life.
+
+Arduino:
+Connect code to the physical world. Kids build smart gadgets and learn how hardware and software work together.
+
+Blender:
+Sculpt and animate amazing 3D characters and environments from scratch. Learn 3D modeling and animation.
+
+Typing Master:
+Unlock productivity and master the keyboard with lightning-fast speed. Essential computer skills.
+
+Robotics:
+Build real robots, solve problems step-by-step, and learn hands-on engineering and coding.
+
+AI and Machine Learning:
+Hands-on AI projects. Learn about Generative AI and how artificial intelligence works.
+
+Web Development and Design:
+Create real websites. Learn HTML, CSS, and web design principles.
+
+3D Printing Model Design:
+Design and print 3D models. Learn digital design and manufacturing.
+
+Game Development:
+Create your own games from scratch. Learn game design, coding, and creative problem-solving.
 
 Who It's For:
-Kids and teens who want to learn coding, robotics, and tech skills. Classes focus on teamwork, creativity, critical thinking, and building confidence.
+Kids and teens who want to learn coding, robotics, and tech skills. Classes focus on teamwork, creativity, critical thinking, and building confidence. Perfect for kids who love technology, games, or building things.
 
-Training Centers:
-- Tema Branch: Hospital Road, Adjacent Ecobank, Community 11, Tema, Ghana (near DHL, Ecobank, and Pizza Hut)
-- Mataheko Branch: Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
+What Kids Learn:
+- Teamwork and collaboration
+- Creative problem-solving
+- Critical thinking and logic
+- Confidence with technology
+- Practical life skills
+- Hands-on building and making
+
+Training Centers (Two Locations):
+
+Tema Branch:
+Hospital Road, Adjacent Ecobank, Community 11, Tema, Ghana
+In the same compound as DHL, Ecobank, and Pizza Hut at Tema Community 7 Traffic Light
+Phone: 030 395 5148
+Email: info@sevenkidscodefoundation.org
+
+Mataheko Branch:
+Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
+Phone: 030 332 3844
+Email: info@sevenkidscodefoundation.org
 
 Contact:
-- Email: info@sevenkidscodefoundation.org
-- Tema Phone: 030 395 5148
-- Mataheko Phone: 030 332 3844
-- Website: sevenkidscodefoundation.org
+Email: info@sevenkidscodefoundation.org
+Tema Phone: 030 395 5148
+Mataheko Phone: 030 332 3844
 
 Teachers:
-Our teachers guide kids through hands-on projects, challenges, and creative tasks.
+Our teachers guide kids through hands-on projects, challenges, and creative tasks. They make learning fun and help every child build confidence.
 
-Enrollment and Pricing:
-For enrollment information, class schedules, and fees, parents should contact us via email or phone, or visit the website.
+Enrollment and Fees:
+For enrollment information, class schedules, and fees, parents should contact us:
+- Email: info@sevenkidscodefoundation.org
+- Call Tema: 030 395 5148
+- Call Mataheko: 030 332 3844
+
+To register, parents can fill out the enrollment form at sevenkidscodefoundation.org or contact us directly via email or phone.
+
+Our Approach:
+We focus on learning by doing. Kids don't just watch — they build, create, and solve real challenges. From mini tech challenges to creative tasks, every class helps kids gain practical skills and confidence.
 
 Tone:
 Soft, welcoming, and encouraging. We focus on building confidence and making tech learning fun for kids.
