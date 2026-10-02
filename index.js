@@ -49,6 +49,7 @@ STRICT RULES:
 7. NEVER invent fees, ages, enrollment details, class schedules, or program specifics not mentioned in the knowledge base.
 8. Keep replies short (1-3 sentences maximum). Use plain, warm, friendly language for parents and kids.
 9. Never answer questions about world events, history, science, math, or any general knowledge topics.
+10. NEVER cite sources, mention URLs (except the registration form URL when enrolling), or say things like "according to our website", "Sources:", or include markdown links. Answer naturally without citations.
 `.trim();
 
 const OFF_TOPIC_REDIRECT = "I'm only here for Seven Kids Code — kids coding. What do you need?";

@@ -1,107 +1,158 @@
-Seven Kids Code Foundation is a kids coding and robotics program in Ghana. We don't just teach tech — we build confidence through fun, hands-on classes in coding, robotics, and game design.
+Seven Kids Code Foundation teaches kids coding, robotics, AI, and game development through fun, hands-on classes. We don't just teach tech — we build confidence.
 
-What We Do:
-We teach children real tech skills through hands-on projects. Kids build real robots, create games, solve problems step-by-step, and work on creative challenges. Every class is exciting and engaging.
+Mission:
+Every child deserves the chance to learn real skills. We make it happen through hands-on classes in coding, robotics, and game design.
 
-What We Teach:
+Who We've Reached:
+Over 150+ kids across Ghana are learning to code, build robots, and create games with us.
 
-Python Programming:
-Master the world's most popular programming language through fun, real-world coding challenges. Kids learn app development and practical coding skills.
+WHO IT'S FOR:
 
-Scratch:
-Blast off into coding with colorful blocks. Kids create their very own animations and learn programming logic visually.
+Age Range:
+We train kids between ages 7 and 16. Programs are designed for complete beginners and for children who are already curious about tech.
 
-Roblox Game Development:
-Design immersive 3D worlds and learn Lua programming to bring games to life.
+Experience Needed:
+No prior coding or robotics experience required. Most kids start with zero background — just curiosity. We teach from the basics, step by step.
 
-Arduino:
-Connect code to the physical world. Kids build smart gadgets and learn how hardware and software work together.
+Who Can Register:
+Parents or legal guardians register their child. You confirm you are the legal parent or guardian and that the information provided is accurate.
 
-Blender:
-Sculpt and animate amazing 3D characters and environments from scratch. Learn 3D modeling and animation.
+PROGRAMS WE OFFER:
 
-Typing Master:
-Unlock productivity and master the keyboard with lightning-fast speed. Essential computer skills.
+Main Programs (choose 1 or 2 when registering):
+- AI, Generative AI & Machine Learning
+- Python Programming and App Development
+- 3D Printing Model Design
+- Web Development and Design
+- Game Development
+- Robotics
 
-Robotics:
-Build real robots, solve problems step-by-step, and learn hands-on engineering and coding.
+Featured Learning Tracks:
+- Python: Master the world's most popular language through fun, real-world coding challenges
+- Scratch: Blast off into coding with colorful blocks and create your own animations
+- Roblox: Design immersive 3D worlds and learn Lua to bring your games to life
+- Arduino: Connect code to the physical world and build your own smart gadgets
+- Blender: Sculpt and animate amazing 3D characters and environments from scratch
+- Typing Master: Unlock your productivity and master the keyboard with lightning-fast speed
 
-AI and Machine Learning:
-Hands-on AI projects. Learn about Generative AI and how artificial intelligence works.
+How We Teach:
+Hands-on, learning by doing. Kids build real robots, create games, solve problems step-by-step. Creative challenges help kids develop teamwork, creativity, and critical thinking.
 
-Web Development and Design:
-Create real websites. Learn HTML, CSS, and web design principles.
+Student Project Ownership:
+Students retain ownership of the projects they create. We may showcase student work (photos of robots, game screenshots) for educational and promotional purposes unless a parent specifically opts out.
 
-3D Printing Model Design:
-Design and print 3D models. Learn digital design and manufacturing.
+CLASS SCHEDULE:
 
-Game Development:
-Create your own games from scratch. Learn game design, coding, and creative problem-solving.
+Online Classes:
+Tuesdays and Thursdays, 5:00 PM to 6:30 PM
 
-Who It's For:
-Kids and teens who want to learn coding, robotics, and tech skills. Classes focus on teamwork, creativity, critical thinking, and building confidence. Perfect for kids who love technology, games, or building things.
+In-Person Classes (Saturdays):
+Current registration time slots at both centers:
+- Morning: 9 AM – 12 PM
+- Afternoon: 1 PM – 4 PM
 
-What Kids Learn:
-- Teamwork and collaboration
-- Creative problem-solving
-- Critical thinking and logic
-- Confidence with technology
-- Practical life skills
-- Hands-on building and making
-
-Training Centers (Two Locations):
+TRAINING CENTERS (Greater Accra Region):
 
 Tema Branch:
 Hospital Road, Adjacent Ecobank, Community 11, Tema, Ghana
-In the same compound as DHL, Ecobank, and Pizza Hut at Tema Community 7 Traffic Light
-Phone: 030 395 5148
+(Same compound as DHL, Ecobank, and Pizza Hut at Tema Community 7 Traffic Light)
+Phone: 030 395 5148 (0303955148)
 Email: info@sevenkidscodefoundation.org
 
 Mataheko Branch:
 Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
-Phone: 030 332 3844
+Phone: 030 332 3844 (0303323844)
 Email: info@sevenkidscodefoundation.org
 
-Contact:
-Email: info@sevenkidscodefoundation.org
-Tema Phone: 030 395 5148
-Mataheko Phone: 030 332 3844
+Main Email: info@sevenkidscodefoundation.org
 
-Teachers:
-Our teachers guide kids through hands-on projects, challenges, and creative tasks. They make learning fun and help every child build confidence.
+HOW TO REGISTER:
 
-Frequently Asked Questions (FAQs):
+Registration Process:
+Parents fill out the online registration form at https://sevenkidscodefoundation.org/register
+After submission, the team reviews your registration and contacts you with next steps.
 
-What age do you accept?
-We train kids between ages 7 and 16. The programs are designed to match each child's level, whether they are complete beginners or already curious about tech.
+What You'll Need to Provide:
+- Student information: full name, date of birth, gender, school name, current class
+- Program selection: choose 1 or 2 programs (maximum 2)
+- Training type: online or in-person
+- Schedule/location preference
+- Parent/guardian information: names, phone numbers, emails, residential areas (both father and mother fields)
 
-Does my child need prior experience?
-No tech experience needed. Our programs are perfect for beginners. We teach step-by-step and meet each child where they are.
+ATTENDANCE & BEHAVIOR EXPECTATIONS:
 
-What programs do you offer?
-We run hands-on classes in Python Programming and App Development, Scratch, Roblox Game Development, Arduino, Blender, Typing Master, Robotics, AI and Machine Learning, Web Development and Design, Game Development, and 3D Printing Model Design. Kids can choose programs based on their interests.
+Students should:
+- Attend classes on time (online or in-person)
+- Treat instructors and fellow students with respect
+- Use equipment and software responsibly
 
-What days are classes held?
-Online Classes: Tuesdays and Thursdays, 5:00 PM to 6:30 PM
-In-Person Classes: Saturdays with multiple time slots:
-- Tema Office: 9 AM – 12 PM or 1 PM – 4 PM
-- Mataheko Office: 9 AM – 12 PM or 1 PM – 4 PM
+For online classes, parents are responsible for supervising the child's internet usage.
 
-Where are your training centers located?
-We have two centers in Greater Accra:
-- Tema Branch: Hospital Road, Adjacent Ecobank, Community 11, Tema (same compound as DHL, Ecobank, and Pizza Hut at Tema Community 7 Traffic Light)
-- Mataheko Branch: Tema-Akosombo Road, Adjacent EMEF Police Station, Mataheko, Afienya
+WHAT PARENTS & STUDENTS SAY:
 
-Enrollment and Fees:
-For enrollment information, class schedules, and fees, parents should contact us:
-- Email: info@sevenkidscodefoundation.org
-- Call Tema: 030 395 5148
-- Call Mataheko: 030 332 3844
+"Kwame used to spend all his time playing games on my phone. Now, he's actually building his own small games. It's very impressive and I'm happy he's learning something useful." — Kofi Mensah, parent (Kwame, 9)
 
-To register, parents can fill out the enrollment form at sevenkidscodefoundation.org or contact us directly via email or phone.
+"I finished my first Scratch animation last week! The teachers make coding so easy and fun." — Ama Serwaa, student (11)
 
-Our Approach:
-We focus on learning by doing. Kids don't just watch — they build, create, and solve real challenges. From mini tech challenges to creative tasks, every class helps kids gain practical skills and confidence.
+"Abena gets so excited for Saturday class. She even helps her little brother with computer homework now!" — Mrs. Oppong, parent (Abena, 10)
 
-Tone:
-Soft, welcoming, and encouraging. We focus on building confidence and making tech learning fun for kids.
+"I love building robots with the Arduino kits. One day I want to be an engineer!" — Ekow Richardson, student (13)
+
+OUR TEAM:
+
+Instructors:
+- Gideon Senayah — Facilitator
+- Miss Pina — Admin Assistant
+- Uncle Jesse — Admin Assistant
+
+Our passionate educators and tech enthusiasts guide kids through hands-on projects and creative challenges.
+
+SUPPORT THE FOUNDATION:
+
+Donations:
+You can support our mission by making a donation at https://sevenkidscodefoundation.org/donations
+One-time gifts help provide digital skills training to kids who need it most and help continue STEM programs.
+
+FREQUENTLY ASKED QUESTIONS:
+
+Q: Can kids outside Tema/Mataheko join?
+A: Yes! We offer online classes, so families outside Greater Accra can still enroll online.
+
+Q: How many programs can my child take?
+A: At registration, you can select 1 or 2 programs (maximum 2).
+
+Q: What if my child is 6 years old?
+A: We accept kids ages 7 to 16. Our programs are designed for that age range.
+
+Q: Do you offer scholarships or fee waivers?
+A: That information is not published on our website. Contact us at info@sevenkidscodefoundation.org or call our centers for details. A teacher will follow up.
+
+Q: What are your class sizes?
+A: Class size information is not published on our website. Contact us for details.
+
+Q: Do you offer certificates or assessments?
+A: Certificate and assessment details are not published on our website. Contact us at info@sevenkidscodefoundation.org or call our centers. A teacher will follow up.
+
+Q: What is your refund or cancellation policy?
+A: Refund and cancellation policy details are not published on our website. Contact us at info@sevenkidscodefoundation.org or call our centers for information.
+
+Q: Can I volunteer or partner with Seven Kids Code?
+A: Volunteer and partnership information is not published on our website. Email info@sevenkidscodefoundation.org to discuss opportunities. A teacher will follow up.
+
+Q: Is Seven Kids Code a registered nonprofit?
+A: Legal status and registration details are not published on our website. Contact info@sevenkidscodefoundation.org for organizational information.
+
+PRIVACY & DATA:
+
+Personal data (registration and payment information) is used for processing registrations, communicating about schedules and student progress, safety, placement, and curriculum improvement. Data is stored securely and accessible only to authorized staff.
+
+Parents have the right to access, correct, or request deletion of personal information by contacting info@sevenkidscodefoundation.org.
+
+Payment processing uses Paystack. We do not store credit card or mobile money details.
+
+STAY CONNECTED:
+
+Social Media:
+- Facebook: https://www.facebook.com/sevenkidscodefoundation/
+- Instagram: https://www.instagram.com/sevenkidscodefoundation
+- TikTok: https://www.tiktok.com/@sevenkidscodefoundation
